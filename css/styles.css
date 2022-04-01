@@ -1,7 +1,85 @@
+:root {
+  --lg-color: #2196f3;
+  --menu-color: #212121;
+}
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
 li {
   list-style-type: none; /* Убираем маркеры */
 }
 ul {
   margin-left: 0; /* Отступ слева в браузере IE и Opera */
   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.logo-part1,
+.logo-part2,
+.logo-part3 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-part1 {
+  color: var(--lg-color);
+}
+.logo-part2 {
+  color: #000000;
+}
+.logo-part3 {
+  color: #ffffff;
+}
+.main-menu .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--menu-color);
+}
+.main-menu .link:focus {
+  color: var(--lg-color);
+}
+.main-menu .link:hover {
+  color: var(--lg-color);
+}
+.main-menu .link::visited {
+  color: var(--menu-color);
+}
+footer {
+  background-color: #2f303a;
+}
+.footer-menu .link {
+  color: #ffffff;
+}
+.footer-menu .more-link {
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
